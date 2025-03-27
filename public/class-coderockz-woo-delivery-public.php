@@ -710,6 +710,7 @@ class Coderockz_Woo_Delivery_Public {
 
 		$max_processing_time = count($max_processing_time_array) > 0 ? array_sum($max_processing_time_array) : 0;
 
+
 		$max_processing_time_pickup = count($max_processing_time_array_pickup) > 0 ? array_sum($max_processing_time_array_pickup) : 0;
 
 
@@ -956,8 +957,9 @@ class Coderockz_Woo_Delivery_Public {
 			}
 		}
 
-		$max_processing_days = count($max_processing_days_array) > 0 ? max($max_processing_days_array) : 0;
-		$max_processing_days_pickup = count($max_processing_days_array_pickup) > 0 ? max($max_processing_days_array_pickup) : 0;
+		$max_processing_time = count($max_processing_time_array) > 0 ? array_sum($max_processing_time_array) : 0;
+$max_processing_time_pickup = count($max_processing_time_array_pickup) > 0 ? array_sum($max_processing_time_array_pickup) : 0;
+
 
 		$temp_max_processing_days = $max_processing_days;
 		$temp_max_processing_days_pickup = $max_processing_days_pickup;
